@@ -188,7 +188,7 @@ void loop() {
   else if (button2State == HIGH) {
     digitalWrite(ledPin, HIGH);
     --targetTemp;
-    if(targetTemp < 0) targetTemp = 0;  // Sanity check, do not allow temperatures higher than 50    
+    if(targetTemp < 0) targetTemp = 0;  // Sanity check, do not allow temperatures lower than 0    
     delay(500);
   }
   else {
